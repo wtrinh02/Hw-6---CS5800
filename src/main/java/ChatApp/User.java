@@ -56,10 +56,6 @@ public class User implements IterableByUser{
         messageMemento.setMessage(message);
     }
 
-    public void printChatHistory()
-    {
-        chatHistory.printChatHistory();
-    }
 
     public ChatHistory getChatHistory()
     {

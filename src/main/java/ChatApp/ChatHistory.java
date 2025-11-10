@@ -13,7 +13,10 @@ public class ChatHistory implements IterableByUser{
     }
 
     public Message getLastMessage() {
-        return messageHistory.get(messageHistory.size()-1);
+        if(!messageHistory.isEmpty()){
+            return messageHistory.get(messageHistory.size()-1);
+        }
+        return null;
     }
 
     public void removeLastMessage(Message message){
