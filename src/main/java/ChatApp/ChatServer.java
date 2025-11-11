@@ -61,4 +61,11 @@ public class ChatServer {
         user.undoMessage();
     }
 
+    public HashMap<String, User> getRegisteredUser(){
+        return registeredUser;
+    }
+    public HashMap<User, Set<User>> getBlockedList(){
+        return blockedList;
+    }
+
 }
